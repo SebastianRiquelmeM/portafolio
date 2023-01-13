@@ -1,9 +1,9 @@
 import React from "react";
-import serverIMG from "../../public/img/servidores.png";
-import frontIMG from "../../public/img/desarrollo-web.png";
-import servicesIMG from "../../public/img/carga-en-la-nube.png";
-import toolsIMG from "../../public/img/optimizacion-web.png";
-
+import serverIMG from "/img/servidores.png";
+import frontIMG from "/img/desarrollo-web.png";
+import servicesIMG from "/img/carga-en-la-nube.png";
+import toolsIMG from "/img/optimizacion-web.png";
+     
 export const Technologies = () => {
 	return (
 		<div className="mt-48 pb-48 md:mt-36">

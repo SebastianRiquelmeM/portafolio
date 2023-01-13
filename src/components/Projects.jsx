@@ -1,7 +1,9 @@
-import ventasThiamagIMG from "../../public/img/ventasthiamag.png";
-import labeitIMG from "../../public/img/labeit.png";
-import ayudantiaIMG from "../../public/img/ayudantia.png";
-import iconoLabeitIMG from "../../public/img/iconolabeit.png";
+import ventasThiamagIMG from "/img/ventasthiamag.png";
+import labeitIMG from "/img/labeit.png";
+import ayudantiaIMG from "/img/ayudantia.png";
+import iconoLabeitIMG from "/img/iconolabeit.png";
+import iconoayudantiaIMG from "/img/iconoayudantia.png";
+import iconoVentasThiamagIMG from "/img/iconoventasthiamag.png";
 
 export const Projects = () => {
 	return (
@@ -36,12 +38,12 @@ export const Projects = () => {
 							</span>
 						</h5>
 						<p className="mb-6 text-gray-900">
-							Esta es una aplicación web que permite a los
-							estudiantes de la carrera Ingeniería civil en
-							Informática y Telecomunicaciones de la Universidad
-							Diego Portales, ver los productos que se encuentran
-							en el laboratorio, y obtener prestamos de los
-							mismos.
+							Desarrollé y agregué funcionalidades para la
+							aplicación web labeit.udp.cl, incluyendo mejoras en
+							varios módulos de CRUD, mejoras de un sistema de
+							administración de inventario y configuración de
+							notificaciones automatizadas de préstamos por correo
+							electrónico.
 						</p>
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
@@ -85,7 +87,7 @@ export const Projects = () => {
 						>
 							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
 								<img
-									src={iconoLabeitIMG}
+									src={iconoayudantiaIMG}
 									/* className="object-cover w-full h-64" */
 									alt=""
 								/>
@@ -100,11 +102,17 @@ export const Projects = () => {
 							</span>
 						</h5>
 						<p className="mb-6 text-gray-900">
-							Se realizan cátedras como ayudante de profesor en la
-							asignatura de desarrollo web, enseñando las bases
-							del desarrollo web mediante la creación de un
-							proyecto full stack aplicando diferentes
-							tecnologías, Diseño e interfaz, API y Base de datos.
+							Me desempeño como ayudante de profesor en la
+							asignatura de desarrollo web, impartiendo cátedras y
+							guiando a los estudiantes en el proceso de
+							aprendizaje. Enseño las bases del desarrollo web a
+							través de la creación de un proyecto full stack, en
+							el cual se aplican diferentes tecnologías, tales
+							como diseño e interfaz, API y base de datos. Mi
+							objetivo es brindar a los estudiantes una
+							experiencia práctica y completa en el desarrollo
+							web, preparándolos para enfrentar los desafíos del
+							mundo laboral.
 						</p>
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
@@ -134,7 +142,7 @@ export const Projects = () => {
 						>
 							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
 								<img
-									src={iconoLabeitIMG}
+									src={iconoVentasThiamagIMG}
 									/* className="object-cover w-full h-64" */
 									alt=""
 								/>
@@ -144,9 +152,16 @@ export const Projects = () => {
 							Tienda Ventas Thiamag
 						</h5>
 						<p className="mb-6 text-gray-900">
-							Crear una aplicación web para exhibir los productos
-							del emprendimiento ventasthiamag y luego recibir
-							contacto de los productos de interés.
+							Desarrollé una aplicación web para promocionar y
+							exhibir los productos del emprendimiento
+							ventasthiamag. La aplicación permite a los clientes
+							potenciales explorar y obtener información detallada
+							sobre los productos, y les da la opción de contactar
+							al vendedor para obtener más información o realizar
+							una compra. Con esta herramienta, logramos aumentar
+							la visibilidad y la eficacia en la promoción de
+							nuestros productos, generando un aumento en las
+							ventas.
 						</p>
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
