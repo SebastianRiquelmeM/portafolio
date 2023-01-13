@@ -1,150 +1,172 @@
-import React from "react";
 import ventasThiamagIMG from "../../public/img/ventasthiamag.png";
 import labeitIMG from "../../public/img/labeit.png";
 import ayudantiaIMG from "../../public/img/ayudantia.png";
+import iconoLabeitIMG from "../../public/img/iconolabeit.png";
 
-/* export const Projects = () => {
-	return (
-		<div className="pb-96">
-			<h1 className="text-6xl mb-20 text-gray-800 font-bold text-center">
-				Proyectos
-			</h1>
-		</div>
-	);
-}; */
 export const Projects = () => {
 	return (
 		<>
-			<h1 className="text-6xl mb-14 text-gray-800 font-bold text-center">
-				Proyectos
-			</h1>
+			{/* Proyecto 1 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-					<div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-md">
-						<img
-							src={ventasThiamagIMG}
-							className="object-cover w-full h-64"
-							alt=""
-						/>
-						<div className="p-5 border border-t-0">
-							<p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-								<a
-									href="/"
-									className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-									aria-label="Category"
-									title="traveling"
-								>
-									Exhibición de productos
-								</a>
-								<span className="text-gray-600">
-									— 2020
+				<h1 className="text-6xl mb-36 text-gray-800 font-bold text-center">
+					Proyectos
+				</h1>
+				<div className="grid gap-10 lg:grid-cols-2">
+					<div className="lg:pr-10">
+						<a
+							href="/"
+							aria-label="Go Home"
+							title="Logo"
+							className="inline-block mb-5"
+						>
+							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+								<img
+									src={iconoLabeitIMG}
+									/* className="object-cover w-full h-64" */
+									alt=""
+								/>
+							</div>
+						</a>
+						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Laboratorio EIT
+							<br className="hidden md:block" />
+							Universidad{" "}
+							<span className="inline-block text-deep-purple-accent-400">
+								Diego Portales
+							</span>
+						</h5>
+						<p className="mb-6 text-gray-900">
+							Esta es una aplicación web que permite a los
+							estudiantes de la carrera Ingeniería civil en
+							Informática y Telecomunicaciones de la Universidad
+							Diego Portales, ver los productos que se encuentran
+							en el laboratorio, y obtener prestamos de los
+							mismos.
+						</p>
+						<hr className="mb-5 border-gray-300" />
+						<div className="flex items-center space-x-4">
+							<a
+								href="javascript:void(0)"
+								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
+							>
+								Ver proyecto{" "}
+								<span className="font-bold ml-1 text-lg align-[-3px]">
+									<ion-icon name="open"></ion-icon>
 								</span>
-							</p>
-							<a
-								href="/"
-								aria-label="Category"
-								title="Visit the East"
-								className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-							>
-								Ventas Thiamag
-							</a>
-							<p className="mb-2 text-gray-700">
-								Sed ut perspiciatis unde omnis iste natus error
-								sit sed quia consequuntur magni voluptatem
-								doloremque.
-							</p>
-							<a
-								href="/"
-								aria-label=""
-								className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-							>
-								ventasthiamag.cl
 							</a>
 						</div>
 					</div>
-					<div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-md">
+					<div>
 						<img
+							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
 							src={labeitIMG}
-							className="object-cover w-full h-64"
 							alt=""
 						/>
-						<div className="p-5 border border-t-0">
-							<p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-								<a
-									href="/"
-									className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-									aria-label="Category"
-									title="traveling"
-								>
-									Inventario y prestamos
-								</a>
-								<span className="text-gray-600">
-									— 2022
+					</div>
+				</div>
+			</div>
+
+			{/* Proyecto 2 */}
+			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+				<div className="grid gap-10 lg:grid-cols-2">
+					<div>
+						<img
+							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+							src={ayudantiaIMG}
+							alt=""
+						/>
+					</div>
+					<div className="lg:pr-10">
+						<a
+							href="/"
+							aria-label="Go Home"
+							title="Logo"
+							className="inline-block mb-5"
+						>
+							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+								<img
+									src={iconoLabeitIMG}
+									/* className="object-cover w-full h-64" */
+									alt=""
+								/>
+							</div>
+						</a>
+						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Ayudantía Desarrollo web
+							<br className="hidden md:block" />
+							Universidad{" "}
+							<span className="inline-block text-deep-purple-accent-400">
+								Diego Portales
+							</span>
+						</h5>
+						<p className="mb-6 text-gray-900">
+							Se realizan cátedras como ayudante de profesor en la
+							asignatura de desarrollo web, enseñando las bases
+							del desarrollo web mediante la creación de un
+							proyecto full stack aplicando diferentes
+							tecnologías, Diseño e interfaz, API y Base de datos.
+						</p>
+						<hr className="mb-5 border-gray-300" />
+						<div className="flex items-center space-x-4">
+							<a
+								href="javascript:void(0)"
+								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
+							>
+								Ver proyecto{" "}
+								<span className="font-bold ml-1 text-lg align-[-3px]">
+									<ion-icon name="open"></ion-icon>
 								</span>
-							</p>
-							<a
-								href="/"
-								aria-label="Category"
-								title="Simple is better"
-								className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-							>
-								Laboratorio EIT UDP
-							</a>
-							<p className="mb-2 text-gray-700">
-								Sed ut perspiciatis unde omnis iste natus error
-								sit sed quia consequuntur magni voluptatem
-								doloremque.
-							</p>
-							<a
-								href="/"
-								aria-label=""
-								className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-							>
-								Learn more
 							</a>
 						</div>
 					</div>
-					<div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-md">
-						<img
-							src={ayudantiaIMG}
-							className="object-cover w-full h-64"
-							alt=""
-						/>
-						<div className="p-5 border border-t-0">
-							<p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-								<a
-									href="/"
-									className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-									aria-label="Category"
-									title="traveling"
-								>
-									Realizar cátedra de desarrollo web
-								</a>
-								<span className="text-gray-600">
-									— 2022
+				</div>
+			</div>
+
+			{/* Proyecto 3 */}
+			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+				<div className="grid gap-10 lg:grid-cols-2">
+					<div className="lg:pr-10">
+						<a
+							href="/"
+							aria-label="Go Home"
+							title="Logo"
+							className="inline-block mb-5"
+						>
+							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+								<img
+									src={iconoLabeitIMG}
+									/* className="object-cover w-full h-64" */
+									alt=""
+								/>
+							</div>
+						</a>
+						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Tienda Ventas Thiamag
+						</h5>
+						<p className="mb-6 text-gray-900">
+							Crear una aplicación web para exhibir los productos
+							del emprendimiento ventasthiamag y luego recibir
+							contacto de los productos de interés.
+						</p>
+						<hr className="mb-5 border-gray-300" />
+						<div className="flex items-center space-x-4">
+							<a
+								href="javascript:void(0)"
+								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
+							>
+								Ver proyecto{" "}
+								<span className="font-bold ml-1 text-lg align-[-3px]">
+									<ion-icon name="open"></ion-icon>
 								</span>
-							</p>
-							<a
-								href="/"
-								aria-label="Category"
-								title="Film It!"
-								className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-							>
-								Ayudantía Desarrollo Web  
-							</a>
-							<p className="mb-2 text-gray-700">
-								Sed ut perspiciatis unde omnis iste natus error
-								sit sed quia consequuntur magni voluptatem
-								doloremque.
-							</p>
-							<a
-								href="/"
-								aria-label=""
-								className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-							>
-								Learn more
 							</a>
 						</div>
+					</div>
+					<div>
+						<img
+							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+							src={ventasThiamagIMG}
+							alt=""
+						/>
 					</div>
 				</div>
 			</div>
