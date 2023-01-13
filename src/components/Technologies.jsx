@@ -12,8 +12,8 @@ export const Technologies = () => {
 				Tecnologías
 			</h1>
 
-			<div className="flex flex-row items-center justify-center mb-20">
-				<div className="md:w-1/4 w-full text-center">
+			<div className="flex flex-wrap justify-center mb-20">
+				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={frontIMG}></img>
 					<h2 className="text-4xl mb-5 font-bold">Frontend</h2>
                          <div>
@@ -28,7 +28,7 @@ export const Technologies = () => {
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Vite</span>
                          </div>
 				</div>    
-				<div className="md:w-1/4 w-full text-center">
+				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={serverIMG}></img>
 					<h2 className="text-4xl mb-5 font-bold">Backend</h2>
                          <div>
@@ -46,8 +46,8 @@ export const Technologies = () => {
                          </div>
 				</div>
 			</div>
-			<div className="flex flex-row items-center justify-center">
-				<div className="md:w-1/4 w-full text-center">
+			<div className="flex flex-wrap justify-center">
+				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={servicesIMG}></img>
 					<h2 className="text-4xl mb-5 font-bold">Servicios</h2>
                          <div>
@@ -62,7 +62,7 @@ export const Technologies = () => {
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Oracle Cloud</span>  
                          </div>
 				</div>
-				<div className="md:w-1/4 w-full text-center">
+				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={toolsIMG}></img>
 					<h2 className="text-4xl mb-5 font-bold">Herramientas</h2>
                          <div>
@@ -70,12 +70,6 @@ export const Technologies = () => {
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Github</span>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Postman</span>
                          </div>
-{/*                          <br></br>
-                         <div style={{marginTop: "-15px"}}>
-                              <span className="bg-indigo-500 p-1 rounded text-white mr-1">Flask</span>
-                              <span className="bg-indigo-500 p-1 rounded text-white mr-1">Bootstrap</span>
-                              <span className="bg-indigo-500 p-1 rounded text-white mr-1">Vite</span>  
-                         </div> */}
 				</div>
 			</div>
 		</div>
