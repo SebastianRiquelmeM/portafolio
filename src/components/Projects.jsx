@@ -10,7 +10,7 @@ export const Projects = () => {
 		<>
 			{/* Proyecto 1 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<h1 className="text-6xl mb-36 text-gray-800 font-bold text-center">
+				<h1 className="text-6xl mb-20 text-gray-800 font-bold text-center">
 					Proyectos
 				</h1>
 				<div className="grid gap-10 lg:grid-cols-2">
@@ -30,7 +30,7 @@ export const Projects = () => {
 							</div>
 						</a>
 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Laboratorio EIT
+							Laboratorio {""}
 							<br className="hidden md:block" />
 							Universidad{" "}
 							<span className="inline-block text-deep-purple-accent-400">
@@ -70,15 +70,15 @@ export const Projects = () => {
 
 			{/* Proyecto 2 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-10 lg:grid-cols-2">
-					<div>
+				<div className="grid gap-10 lg:grid-cols-2 flex">
+					<div className="md:order-1 order-2">
 						<img
 							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
 							src={ayudantiaIMG}
 							alt=""
 						/>
 					</div>
-					<div className="lg:pr-10">
+					<div className="lg:pr-10 md:order-2 order-1">
 						<a
 							href="/"
 							aria-label="Go Home"
