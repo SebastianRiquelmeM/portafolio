@@ -8,14 +8,14 @@ export const Technologies = () => {
 	return (
 		<div className="mt-48 pb-48 md:mt-36">
 			{/* About me, with image in left and text in right */}
-			<h1 className="text-6xl mb-20 text-gray-800 font-bold text-center">
+			<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
 				Tecnologías
 			</h1>
 
 			<div className="flex flex-wrap justify-center mb-20">
 				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={frontIMG}></img>
-					<h2 className="text-4xl mb-5 font-bold">Frontend</h2>
+					<h2 className="dark:text-white text-4xl mb-5 font-bold">Frontend</h2>
                          <div>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">HTML</span>
 					     <span className="bg-indigo-500 p-1 rounded text-white mr-1">Javascript</span>
@@ -30,7 +30,7 @@ export const Technologies = () => {
 				</div>    
 				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={serverIMG}></img>
-					<h2 className="text-4xl mb-5 font-bold">Backend</h2>
+					<h2 className="dark:text-white text-4xl mb-5 font-bold">Backend</h2>
                          <div>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">NodeJS</span>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Express</span>
@@ -49,7 +49,7 @@ export const Technologies = () => {
 			<div className="flex flex-wrap justify-center">
 				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={servicesIMG}></img>
-					<h2 className="text-4xl mb-5 font-bold">Servicios</h2>
+					<h2 className="dark:text-white text-4xl mb-5 font-bold">Servicios</h2>
                          <div>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Docker</span>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Docker compose</span>
@@ -64,7 +64,7 @@ export const Technologies = () => {
 				</div>
 				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={toolsIMG}></img>
-					<h2 className="text-4xl mb-5 font-bold">Herramientas</h2>
+					<h2 className="dark:text-white text-4xl mb-5 font-bold">Herramientas</h2>
                          <div>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Git</span>
                               <span className="bg-indigo-500 p-1 rounded text-white mr-1">Github</span>

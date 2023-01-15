@@ -7,10 +7,10 @@ import iconoVentasThiamagIMG from "/img/iconoventasthiamag.png";
 
 export const Projects = () => {
 	return (
-		<>
+		<div className="dark:text-white">
 			{/* Proyecto 1 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<h1 className="text-6xl mb-20 text-gray-800 font-bold text-center">
+				<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
 					Proyectos
 				</h1>
 				<div className="grid gap-10 lg:grid-cols-2">
@@ -37,7 +37,7 @@ export const Projects = () => {
 								Diego Portales
 							</span>
 						</h5>
-						<p className="mb-6 text-gray-900">
+						<p className="mb-6 dark:text-white text-gray-900">
 							Desarrollé y agregué funcionalidades para la
 							aplicación web labeit.udp.cl, incluyendo mejoras en
 							varios módulos de CRUD, mejoras de un sistema de
@@ -101,7 +101,7 @@ export const Projects = () => {
 								Diego Portales
 							</span>
 						</h5>
-						<p className="mb-6 text-gray-900">
+						<p className="mb-6 dark:text-white  text-gray-900">
 							Me desempeño como ayudante de profesor en la
 							asignatura de desarrollo web, impartiendo cátedras y
 							guiando a los estudiantes en el proceso de
@@ -151,7 +151,7 @@ export const Projects = () => {
 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
 							Tienda Ventas Thiamag
 						</h5>
-						<p className="mb-6 text-gray-900">
+						<p className="dark:text-white mb-6 text-gray-900">
 							Desarrollé una aplicación web para promocionar y
 							exhibir los productos del emprendimiento
 							ventasthiamag. La aplicación permite a los clientes
@@ -185,6 +185,6 @@ export const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };

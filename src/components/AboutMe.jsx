@@ -7,10 +7,10 @@ export const AboutMe = () => {
 			{/* About me, with image in left and text in right */}
 			<div className="flex flex-wrap items-center justify-center mt-48 md:mt-96">
 				<div className="w-full lg:w-1/2 lg:px-32 px-5">
-					<h1 className="text-center text-3xl md:text-5xl font-bold text-gray-800 mb-14">
+					<h1 className="text-center dark:text-white text-3xl md:text-5xl font-bold text-gray-800 mb-14">
 						Acerca de mi
 					</h1>	
-					<p className="text-gray-600 mb-4 text-center">
+					<p className="text-gray-600 dark:text-white mb-4 text-center">
 						Soy un desarrollador web con experiencia en desarrollo
 						de aplicaciones web, con conocimientos y habilidades en
 						tecnologías de backend y frontend. Como estudiante de
