@@ -6,7 +6,7 @@ import toolsIMG from "/img/optimizacion-web.png";
      
 export const Technologies = () => {
 	return (
-		<div className="mt-48 pb-48 md:mt-36">
+		<div className="mt-48 pb-48 md:mt-48">
 			{/* About me, with image in left and text in right */}
 			<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
 				Tecnologías

@@ -23,7 +23,7 @@ export default () => {
 					</ul>
 				</nav>
 			</header>
-			<section className="mt-36 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
+			<section className="mt-24 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
 				<div className="text-center space-y-4">
 					<h5 className="font-bold text-2xl dark:text-white">
 						Hola 👋, soy
@@ -43,7 +43,7 @@ export default () => {
 				<div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
 					<a
 						href="https://sebastianriquelmem.github.io/portafolio/assets/Sebastián%20Riquelme%20Muñoz.pdf"
-                        target="_blank"
+						target="_blank"
 						className="font-bold px-10 py-3.5 w-full bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 					>
 						Descargar CV{" "}
@@ -59,10 +59,22 @@ export default () => {
 						<span className="font-bold ml-1 text-lg align-[-3px]"></span>
 					</a>
 				</div>
-				<div className="mt-12 dark:text-white text-5xl justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
-                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-riquelme-566a16261/" target="_blank" className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/SebastianRiquelmeM" target="_blank" className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"><ion-icon name="logo-github"></ion-icon></a>
-                </div>
+				<div className="mt-12 dark:text-white text-5xl justify-center items-center flex sm:space-x-6 sm:space-y-0">
+					<a
+						href="https://www.linkedin.com/in/sebasti%C3%A1n-riquelme-566a16261/"
+						target="_blank"
+						className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"
+					>
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a
+						href="https://github.com/SebastianRiquelmeM"
+						target="_blank"
+						className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"
+					>
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+				</div>
 			</section>
 		</>
 	);

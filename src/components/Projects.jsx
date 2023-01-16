@@ -30,13 +30,16 @@ export const Projects = () => {
 							</div>
 						</a>
 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Laboratorio Universidad Diego Portales
+						</h5>
+{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
 							Laboratorio {""}
 							<br className="hidden md:block" />
 							Universidad{" "}
 							<span className="inline-block text-deep-purple-accent-400">
 								Diego Portales
 							</span>
-						</h5>
+						</h5> */}
 						<p className="mb-6 dark:text-white text-gray-900">
 							Desarrollé y agregué funcionalidades para la
 							aplicación web labeit.udp.cl, incluyendo mejoras en
@@ -95,13 +98,16 @@ export const Projects = () => {
 							</div>
 						</a>
 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Ayudantía Desarrollo web
-							<br className="hidden md:block" />
-							Universidad{" "}
-							<span className="inline-block text-deep-purple-accent-400">
-								Diego Portales
-							</span>
+							Ayudantía Desarrollo web Universidad Diego Portales
 						</h5>
+						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Ayudantía Desarrollo web {" "}
+							<br className="hidden md:block" />
+							{" "}
+							<span className="inline-block text-deep-purple-accent-400">
+							Universidad Diego Portales
+							</span>
+						</h5> */}
 						<p className="mb-6 dark:text-white  text-gray-900">
 							Me desempeño como ayudante de profesor en la
 							asignatura de desarrollo web, impartiendo cátedras y
