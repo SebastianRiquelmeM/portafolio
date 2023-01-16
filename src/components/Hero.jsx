@@ -42,7 +42,8 @@ export default () => {
 				</div>
 				<div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
 					<a
-						href="javascript:void(0)"
+						href="./Sebastián Riquelme Muñoz.pdf"
+                        target="_blank"
 						className="font-bold px-10 py-3.5 w-full bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 					>
 						Descargar CV{" "}
@@ -51,13 +52,17 @@ export default () => {
 						</span>
 					</a>
 					<a
-						href="javascript:void(0)"
+						href="mailto:riquelmemunozsebastian@gmail.com"
 						className="font-bold dark:text-white px-10 py-3.5 w-full text-gray-700 text-center border rounded-md duration-300 hover:text-indigo-600 hover:shadow block sm:w-auto"
 					>
 						Contactame{" "}
 						<span className="font-bold ml-1 text-lg align-[-3px]"></span>
 					</a>
 				</div>
+				<div className="mt-12 dark:text-white text-5xl justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-riquelme-566a16261/" target="_blank" className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/SebastianRiquelmeM" target="_blank" className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
 			</section>
 		</>
 	);

@@ -9,7 +9,7 @@ export const AboutMe = () => {
 				<div className="w-full lg:w-1/2 lg:px-32 px-5">
 					<h1 className="text-center dark:text-white text-3xl md:text-5xl font-bold text-gray-800 mb-14">
 						Acerca de mi
-					</h1>	
+					</h1>
 					<p className="text-gray-600 dark:text-white mb-4 text-center">
 						Soy un desarrollador web con experiencia en desarrollo
 						de aplicaciones web, con conocimientos y habilidades en

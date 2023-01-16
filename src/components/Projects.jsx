@@ -7,7 +7,7 @@ import iconoVentasThiamagIMG from "/img/iconoventasthiamag.png";
 
 export const Projects = () => {
 	return (
-		<div className="dark:text-white">
+		<div className="dark:text-white pb-20">
 			{/* Proyecto 1 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 				<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
@@ -48,7 +48,8 @@ export const Projects = () => {
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
 							<a
-								href="javascript:void(0)"
+								href="https://labeit.udp.cl/"
+								target="_blank"
 								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 							>
 								Ver proyecto{" "}
@@ -117,7 +118,8 @@ export const Projects = () => {
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
 							<a
-								href="javascript:void(0)"
+								href="https://github.com/SebastianRiquelmeM/desarrollo-web-ayudantia"
+								target="_blank"
 								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 							>
 								Ver proyecto{" "}
@@ -166,7 +168,8 @@ export const Projects = () => {
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
 							<a
-								href="javascript:void(0)"
+								href="https://ventasthiamag.cl/"
+								target="_blank"
 								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 							>
 								Ver proyecto{" "}
