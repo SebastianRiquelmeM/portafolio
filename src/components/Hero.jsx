@@ -15,26 +15,25 @@ export default () => {
 	return (
 		<>
 			<header>
-				<nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 md:flex md:space-x-6">
-					<ul
-						className={`flex-1 justify-end mt-12 md:flex md:mt-0 ${
-							state ? "" : "hidden"
-						}`}
-					>
-						<li className="order-2 ml-10 pb-5 md:pb-0">
+				<nav className="flex justify-end">
+					<ul>
+						<li className="mt-5 mr-5 md:mr-20">
 							<Switcher />
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<section className="mt-48 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
+			<section className="mt-36 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
 				<div className="text-center space-y-4">
 					<h5 className="font-bold text-2xl dark:text-white">
 						Hola 👋, soy
 					</h5>
 					<h1 className="text-gray-800 dark:text-white font-bold text-6xl md:text-7xl">
 						Sebastián
-						<span className="text-indigo-600 dark:text-white"> Riquelme</span>
+						<span className="text-indigo-600 dark:text-white">
+							{" "}
+							Riquelme
+						</span>
 					</h1>
 					<h5 className="font-bold dark:text-white text-2xl">
 						Desarrollador Full Stack, apasionado por el desarrollo

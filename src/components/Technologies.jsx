@@ -13,7 +13,7 @@ export const Technologies = () => {
 			</h1>
 
 			<div className="flex flex-wrap justify-center mb-20">
-				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
+				<div className="md:w-1/4 md:mr-20 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={frontIMG}></img>
 					<h2 className="dark:text-white text-4xl mb-5 font-bold">Frontend</h2>
                          <div>
@@ -47,7 +47,7 @@ export const Technologies = () => {
 				</div>
 			</div>
 			<div className="flex flex-wrap justify-center">
-				<div className="md:w-1/4 w-full text-center mb-24 md:mb-0">
+				<div className="md:w-1/4 md:mr-20 w-full text-center mb-24 md:mb-0">
 					<img className="mx-auto h-48 mb-10" src={servicesIMG}></img>
 					<h2 className="dark:text-white text-4xl mb-5 font-bold">Servicios</h2>
                          <div>

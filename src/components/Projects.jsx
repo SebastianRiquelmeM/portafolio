@@ -71,14 +71,14 @@ export const Projects = () => {
 			{/* Proyecto 2 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 				<div className="grid gap-10 lg:grid-cols-2 flex">
-					<div className="md:order-1 order-2">
+					<div className="lg:order-1 order-2">
 						<img
 							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
 							src={ayudantiaIMG}
 							alt=""
 						/>
 					</div>
-					<div className="lg:pr-10 md:order-2 order-1">
+					<div className="lg:pr-10 lg:order-2 order-1">
 						<a
 							href="/"
 							aria-label="Go Home"
