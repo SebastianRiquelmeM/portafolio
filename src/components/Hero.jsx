@@ -42,7 +42,7 @@ export default () => {
 				</div>
 				<div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
 					<a
-						href="./Sebastián Riquelme Muñoz.pdf"
+						href="https://sebastianriquelmem.github.io/portafolio/assets/Sebastián%20Riquelme%20Muñoz.pdf"
                         target="_blank"
 						className="font-bold px-10 py-3.5 w-full bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 					>
