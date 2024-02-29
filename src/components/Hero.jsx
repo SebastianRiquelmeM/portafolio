@@ -36,8 +36,7 @@ export default () => {
 						</span>
 					</h1>
 					<h5 className="font-bold dark:text-white text-2xl">
-						Desarrollador Full Stack, apasionado por el desarrollo
-						Frontend
+						Desarrollador Full Stack
 					</h5>
 				</div>
 				<div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
