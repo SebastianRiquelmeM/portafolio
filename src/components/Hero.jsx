@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Switcher from "./Switcher";
+import cv from "/pdf/Sebastián Riquelme Muñoz.pdf";
 
 export default () => {
 	const [state, setState] = useState(false);
@@ -41,15 +42,17 @@ export default () => {
 				</div>
 				<div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
 					<a
-						href="https://sebastianriquelmem.github.io/portafolio/assets/Sebastián%20Riquelme%20Muñoz.pdf"
-						target="_blank"
+						href={cv}
+						target="_blank" // Asegúrate de agregar esto para abrir en una nueva pestaña
+						rel="noopener noreferrer" // Buenas prácticas de seguridad
 						className="font-bold px-10 py-3.5 w-full bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 					>
-						Descargar CV{" "}
+						Descargar CV
 						<span className="font-bold ml-1 text-lg align-[-3px]">
 							<ion-icon name="cloud-download-outline"></ion-icon>
 						</span>
 					</a>
+
 					<a
 						href="mailto:riquelmemunozsebastian@gmail.com"
 						className="font-bold dark:text-white px-10 py-3.5 w-full text-gray-700 text-center border rounded-md duration-300 hover:text-indigo-600 hover:shadow block sm:w-auto"
