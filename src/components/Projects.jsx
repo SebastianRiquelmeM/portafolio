@@ -4,15 +4,77 @@ import ayudantiaIMG from "/img/ayudantia.png";
 import iconoLabeitIMG from "/img/iconolabeit.png";
 import iconoayudantiaIMG from "/img/iconoayudantia.png";
 import iconoVentasThiamagIMG from "/img/iconoventasthiamag.png";
+import influenceIMG from "/img/influence.png";
 
 export const Projects = () => {
 	return (
 		<div className="dark:text-white pb-20">
+			<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
+				Trabajo y proyectos
+			</h1>
+
+			{/* Proyecto 0 - Trabajo influence */}
+			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+				<div className="grid gap-10 lg:grid-cols-2 flex">
+					<div className="lg:order-1 order-2">
+						<img
+							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+							src={influenceIMG}
+							alt=""
+						/>
+					</div>
+					<div className="lg:pr-10 lg:order-2 order-1">
+						<a
+							href="/"
+							aria-label="Go Home"
+							title="Logo"
+							className="inline-block mb-5"
+						>
+							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+								<img
+									src={iconoayudantiaIMG}
+									/* className="object-cover w-full h-64" */
+									alt=""
+								/>
+							</div>
+						</a>
+						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Desarrollador full stack en Influence Latam
+						</h5>
+						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+							Ayudantía Desarrollo web {" "}
+							<br className="hidden md:block" />
+							{" "}
+							<span className="inline-block text-deep-purple-accent-400">
+							Universidad Diego Portales
+							</span>
+						</h5> */}
+						<p className="mb-6 dark:text-white  text-gray-900">
+							Desarrollo y mejoro software interno centrado en
+							interfaces de usuario, gestión de datos y bases de
+							datos. Colaboro en la digitalización de la empresa,
+							automatizando procesos manuales o mejorando su flujo
+							actual.
+						</p>
+						<hr className="mb-5 border-gray-300" />
+						<div className="flex items-center space-x-4">
+							<a
+								href="https://github.com/SebastianRiquelmeM/desarrollo-web-ayudantia"
+								target="_blank"
+								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
+							>
+								Visitar página de la empresa{" "}
+								<span className="font-bold ml-1 text-lg align-[-3px]">
+									<ion-icon name="open"></ion-icon>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* Proyecto 1 */}
 			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
-					Proyectos
-				</h1>
 				<div className="grid gap-10 lg:grid-cols-2">
 					<div className="lg:pr-10">
 						<a
@@ -32,7 +94,7 @@ export const Projects = () => {
 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
 							Laboratorio Universidad Diego Portales
 						</h5>
-{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
+						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
 							Laboratorio {""}
 							<br className="hidden md:block" />
 							Universidad{" "}

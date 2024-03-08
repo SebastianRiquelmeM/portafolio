@@ -11,17 +11,14 @@ export const AboutMe = () => {
 						Acerca de mi
 					</h1>
 					<p className="text-gray-600 dark:text-white mb-4 text-center">
-						Soy un desarrollador web con experiencia en desarrollo
-						de aplicaciones web, con conocimientos y habilidades en
-						tecnologías de backend y frontend. Como estudiante de
-						ingeniería civil en informática y telecomunicaciones,
-						busco oportunidades de empleo para aplicar mi
-						experiencia y habilidades en el área de desarrollo web.
-						Además, tengo experiencia enseñando como ayudante de
-						profesor en la universidad Diego Portales en el curso de
-						Desarrollo web, lo que me permite compartir mi
-						conocimiento y ayudar a otros a desarrollar sus
-						habilidades en el área.
+						Soy desarrollador web experimentado en tecnologías
+						backend y frontend, actualmente estudiando Ingeniería
+						Civil en Informática y Telecomunicaciones. Como
+						desarrollador full stack, he aplicado mis habilidades en
+						diversos proyectos impactando positivamente. Además,
+						como ayudante de profesor en la Universidad Diego
+						Portales, comparto mis conocimientos de desarrollo web,
+						contribuyendo al crecimiento de otros en la área.
 					</p>
 				</div>
 				<div className="w-full lg:w-1/2 justify-center lg:mt-0 mt-20">

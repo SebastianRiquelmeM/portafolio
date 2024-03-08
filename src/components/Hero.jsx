@@ -69,13 +69,13 @@ export default () => {
 					>
 						<ion-icon name="logo-linkedin"></ion-icon>
 					</a>
-					<a
+					{/* <a
 						href="https://github.com/SebastianRiquelmeM"
 						target="_blank"
 						className="mx-3 cursor-pointer hover:scale-150 hover:transition-all hover:duration-300"
 					>
 						<ion-icon name="logo-github"></ion-icon>
-					</a>
+					</a> */}
 				</div>
 			</section>
 		</>
