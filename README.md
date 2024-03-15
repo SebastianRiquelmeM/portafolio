@@ -1,5 +1,6 @@
 # Ver portafolio web
-https://sebastianriquelmem.github.io/portafolio/
+
+https://sebastianriquelme.cl/
 
 # Tecnologías utilizadas
 
