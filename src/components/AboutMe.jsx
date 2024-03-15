@@ -17,8 +17,8 @@ export const AboutMe = () => {
 						desarrollador full stack, he aplicado mis habilidades en
 						diversos proyectos impactando positivamente. Además,
 						como ayudante de profesor en la Universidad Diego
-						Portales, comparto mis conocimientos de desarrollo web,
-						contribuyendo al crecimiento de otros en la área.
+						Portales, he compartido mis conocimientos de desarrollo
+						web, contribuyendo al crecimiento de otros en la área.
 					</p>
 				</div>
 				<div className="w-full lg:w-1/2 justify-center lg:mt-0 mt-20">

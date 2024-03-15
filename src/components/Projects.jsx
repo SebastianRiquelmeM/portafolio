@@ -4,6 +4,7 @@ import ayudantiaIMG from "/img/ayudantia.png";
 import iconoLabeitIMG from "/img/iconolabeit.png";
 import iconoayudantiaIMG from "/img/iconoayudantia.png";
 import iconoVentasThiamagIMG from "/img/iconoventasthiamag.png";
+import iconoInfluenceIMG from "/img/programador.png";
 import influenceIMG from "/img/influence.png";
 
 export const Projects = () => {
@@ -32,7 +33,7 @@ export const Projects = () => {
 						>
 							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
 								<img
-									src={iconoayudantiaIMG}
+									src={iconoInfluenceIMG}
 									/* className="object-cover w-full h-64" */
 									alt=""
 								/>
@@ -50,16 +51,23 @@ export const Projects = () => {
 							</span>
 						</h5> */}
 						<p className="mb-6 dark:text-white  text-gray-900">
-							Desarrollo y mejoro software interno centrado en
-							interfaces de usuario, gestión de datos y bases de
-							datos. Colaboro en la digitalización de la empresa,
-							automatizando procesos manuales o mejorando su flujo
-							actual.
+							Soy un desarrollador con experiencia full stack,
+							manejando tanto el frontend como el backend, bases
+							de datos y soluciones en la nube. Desarrollo y
+							mejoro software interno centrado en interfaces de
+							usuario, gestión de datos y bases de datos. Colaboro
+							en la digitalización de la empresa, automatizando
+							procesos manuales o mejorando su flujo actual. Mi
+							enfoque incluye la creación de soluciones eficientes
+							que se integran de manera óptima con diversas
+							plataformas de cloud computing, permitiéndome
+							implementar y mantener infraestructuras robustas
+							para soportar los requisitos del negocio.
 						</p>
 						<hr className="mb-5 border-gray-300" />
 						<div className="flex items-center space-x-4">
 							<a
-								href="https://github.com/SebastianRiquelmeM/desarrollo-web-ayudantia"
+								href="https://influence.cl/"
 								target="_blank"
 								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
 							>
