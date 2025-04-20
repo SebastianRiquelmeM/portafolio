@@ -81,8 +81,34 @@
 				transition: color 0.2s, background-color 0.2s;
 			}
 		</style>
+		
+		<!-- Script para inicializar tema antes de que se renderice la página -->
+		<script>
+			// Función para establecer el tema inicial
+			function initTheme() {
+				// Obtener tema guardado en localStorage
+				const savedTheme = localStorage.getItem('theme');
+				
+				if (savedTheme) {
+					// Aplicar tema guardado
+					document.documentElement.classList.add(savedTheme);
+				} else {
+					// Usar preferencia del sistema
+					if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.documentElement.classList.add('dark');
+						localStorage.setItem('theme', 'dark');
+					} else {
+						document.documentElement.classList.add('light');
+						localStorage.setItem('theme', 'light');
+					}
+				}
+			}
+			
+			// Ejecutar inmediatamente para evitar parpadeo
+			initTheme();
+		</script>
 	</head>
-	<body class="bg-gray-100 dark:bg-gray-900">
+	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
 		<script

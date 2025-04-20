@@ -14,129 +14,131 @@ import { Element } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
-	const [theme, setTheme] = useState(() => {
-		return localStorage.getItem('theme') || 'dark';
+	// El tema se maneja a través de las clases CSS en el elemento HTML
+	// y el localStorage, no es necesario un estado aquí
+	// Las clases dark/light las gestiona useDarkSide.jsx
+	
+	// Para actualizar las partículas según el tema actual
+	const [currentTheme, setCurrentTheme] = useState(() => {
+		return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
 	});
 	
+	// Observar cambios en las clases del elemento HTML para actualizar las partículas
 	useEffect(() => {
-		// Sincronizar con el tema del sistema en caso de que cambie
-		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-		const handleChange = () => {
-			const newTheme = mediaQuery.matches ? 'dark' : 'light';
-			setTheme(localStorage.getItem('theme') || newTheme);
-		};
+		const observer = new MutationObserver((mutations) => {
+			mutations.forEach((mutation) => {
+				if (mutation.attributeName === 'class') {
+					const newTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+					setCurrentTheme(newTheme);
+				}
+			});
+		});
 		
-		mediaQuery.addEventListener('change', handleChange);
-		return () => mediaQuery.removeEventListener('change', handleChange);
+		observer.observe(document.documentElement, { attributes: true });
+		
+		return () => {
+			observer.disconnect();
+		};
 	}, []);
 
 	return (
-		<div className={`${theme} bg-white dark:bg-gray-900 transition-colors duration-500`}>
+		<div className="bg-white dark:bg-gray-900 transition-colors duration-500">
 			{/* Partículas de fondo animadas */}
 			<Particles 
 				count={30} 
-				color={theme === 'dark' ? '#818CF8' : '#4F46E5'} 
+				color={currentTheme === 'dark' ? '#818CF8' : '#4F46E5'} 
 				minSize={1} 
 				maxSize={3} 
 				speed={0.3} 
 			/>
 			
-			<AnimatePresence mode="wait">
+			<div className="relative z-10">
 				<motion.div 
-					key={theme} // Esto provoca una animación cuando cambia el tema
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+				>
+					<Navbar />
+				</motion.div>
+				
+				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ duration: 0.3 }}
-					className="relative z-10"
+					transition={{ duration: 0.5 }}
 				>
-					<motion.div 
-						initial={{ opacity: 0, y: -20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5 }}
-					>
-						<Navbar />
-					</motion.div>
+					<Element name="hero">
+						<Hero />
+					</Element>
 					
 					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ duration: 0.5 }}
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7 }}
+						viewport={{ once: true, margin: "-100px" }}
 					>
-						<Element name="hero">
-							<Hero />
+						<Element name="aboutme">
+							<AboutMe />
 						</Element>
-						
-						<motion.div
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7 }}
-							viewport={{ once: true, margin: "-100px" }}
-						>
-							<Element name="aboutme">
-								<AboutMe />
-							</Element>
-						</motion.div>
-						
-						<motion.div
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7 }}
-							viewport={{ once: true, margin: "-100px" }}
-							className="section-gradient"
-						>
-							<Element name="experience">
-								<Experience />
-							</Element>
-						</motion.div>
-						
-						<motion.div
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7 }}
-							viewport={{ once: true, margin: "-100px" }}
-						>
-							<Element name="technologies">
-								<Technologies />
-							</Element>
-						</motion.div>
-						
-						<motion.div
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7 }}
-							viewport={{ once: true, margin: "-100px" }}
-							className="section-gradient"
-						>
-							<Element name="projects">
-								<Projects />
-							</Element>
-						</motion.div>
-						
-						<motion.div
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7 }}
-							viewport={{ once: true, margin: "-100px" }}
-						>
-							<Element name="contact">
-								<Contact />
-							</Element>
-						</motion.div>
 					</motion.div>
 					
 					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ duration: 0.5, delay: 0.3 }}
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7 }}
+						viewport={{ once: true, margin: "-100px" }}
+						className="section-gradient"
 					>
-						<Footer />
+						<Element name="experience">
+							<Experience />
+						</Element>
 					</motion.div>
 					
-					{/* Botón de scroll hacia arriba que aparece cuando el usuario ha hecho scroll */}
-					<ScrollToTopButton />
+					<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7 }}
+						viewport={{ once: true, margin: "-100px" }}
+					>
+						<Element name="technologies">
+							<Technologies />
+						</Element>
+					</motion.div>
+					
+					<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7 }}
+						viewport={{ once: true, margin: "-100px" }}
+						className="section-gradient"
+					>
+						<Element name="projects">
+							<Projects />
+						</Element>
+					</motion.div>
+					
+					<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7 }}
+						viewport={{ once: true, margin: "-100px" }}
+					>
+						<Element name="contact">
+							<Contact />
+						</Element>
+					</motion.div>
 				</motion.div>
-			</AnimatePresence>
+				
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5, delay: 0.3 }}
+				>
+					<Footer />
+				</motion.div>
+				
+				{/* Botón de scroll hacia arriba que aparece cuando el usuario ha hecho scroll */}
+				<ScrollToTopButton />
+			</div>
 		</div>
 	);
 }
