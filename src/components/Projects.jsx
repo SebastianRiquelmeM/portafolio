@@ -1,3 +1,5 @@
+import React from "react";
+import { motion } from "framer-motion";
 import ventasThiamagIMG from "/img/ventasthiamag.png";
 import labeitIMG from "/img/labeit.png";
 import ayudantiaIMG from "/img/ayudantia.png";
@@ -8,260 +10,157 @@ import iconoInfluenceIMG from "/img/programador.png";
 import influenceIMG from "/img/influence.png";
 
 export const Projects = () => {
+	const projects = [
+		{
+			id: 1,
+			title: "Sistema de Gestión de Campañas - Influence Latam",
+			description: "Diseñé y desarrollé un sistema integral que proyecta duplicar el margen operativo (10% a 20%) al proporcionar visibilidad completa sobre el flujo de caja.",
+			detailedDescription: "Soy un desarrollador con experiencia full stack, manejando tanto el frontend como el backend, bases de datos y soluciones en la nube. Desarrollo y mejoro software interno centrado en interfaces de usuario, gestión de datos y bases de datos. Colaboro en la digitalización de la empresa, automatizando procesos manuales o mejorando su flujo actual. Mi enfoque incluye la creación de soluciones eficientes que se integran de manera óptima con diversas plataformas de cloud computing, permitiéndome implementar y mantener infraestructuras robustas para soportar los requisitos del negocio.",
+			image: influenceIMG,
+			icon: iconoInfluenceIMG,
+			link: "https://influence.cl/",
+			linkText: "Visitar página de la empresa",
+			categories: ["professional", "fullstack", "react", "node"]
+		},
+		{
+			id: 2,
+			title: "Laboratorio Universidad Diego Portales",
+			description: "Desarrollé funcionalidades para la aplicación web labeit.udp.cl, mejorando módulos CRUD, sistemas de administración de inventario y configurando notificaciones automatizadas.",
+			detailedDescription: "Desarrollé y agregué funcionalidades para la aplicación web labeit.udp.cl, incluyendo mejoras en varios módulos de CRUD, mejoras de un sistema de administración de inventario y configuración de notificaciones automatizadas de préstamos por correo electrónico.",
+			image: labeitIMG,
+			icon: iconoLabeitIMG,
+			link: "https://labeit.udp.cl/",
+			linkText: "Ver proyecto",
+			categories: ["professional", "fullstack", "crud"]
+		},
+		{
+			id: 3,
+			title: "Ayudantía Desarrollo Web - UDP",
+			description: "Dicté clases prácticas a estudiantes de ingeniería con un enfoque hands-on, guiándolos en el desarrollo de proyectos full stack con APIs reales y bases de datos.",
+			detailedDescription: "Me desempeño como ayudante de profesor en la asignatura de desarrollo web, impartiendo cátedras y guiando a los estudiantes en el proceso de aprendizaje. Enseño las bases del desarrollo web a través de la creación de un proyecto full stack, en el cual se aplican diferentes tecnologías, tales como diseño e interfaz, API y base de datos. Mi objetivo es brindar a los estudiantes una experiencia práctica y completa en el desarrollo web, preparándolos para enfrentar los desafíos del mundo laboral.",
+			image: ayudantiaIMG,
+			icon: iconoayudantiaIMG,
+			link: "https://github.com/SebastianRiquelmeM/desarrollo-web-ayudantia",
+			linkText: "Ver proyecto",
+			categories: ["education", "fullstack", "teaching"]
+		},
+		{
+			id: 4,
+			title: "Tienda Ventas Thiamag",
+			description: "Desarrollé una aplicación web para promocionar y exhibir los productos del emprendimiento, permitiendo a los clientes explorar productos y contactar al vendedor.",
+			detailedDescription: "Desarrollé una aplicación web para promocionar y exhibir los productos del emprendimiento ventasthiamag. La aplicación permite a los clientes potenciales explorar y obtener información detallada sobre los productos, y les da la opción de contactar al vendedor para obtener más información o realizar una compra. Con esta herramienta, logramos aumentar la visibilidad y la eficacia en la promoción de nuestros productos, generando un aumento en las ventas.",
+			image: ventasThiamagIMG,
+			icon: iconoVentasThiamagIMG,
+			link: "https://ventasthiamag.cl/",
+			linkText: "Ver proyecto",
+			categories: ["personal", "frontend", "ecommerce"]
+		}
+	];
+
 	return (
-		<div className="dark:text-white pb-20">
-			<h1 className="dark:text-white text-6xl mb-20 text-gray-800 font-bold text-center">
-				Trabajo y proyectos
-			</h1>
-
-			{/* Proyecto 0 - Trabajo influence */}
-			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-10 lg:grid-cols-2 flex">
-					<div className="lg:order-1 order-2">
-						<img
-							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-							src={influenceIMG}
-							alt=""
-						/>
-					</div>
-					<div className="lg:pr-10 lg:order-2 order-1">
-						<a
-							href="/"
-							aria-label="Go Home"
-							title="Logo"
-							className="inline-block mb-5"
-						>
-							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-								<img
-									src={iconoInfluenceIMG}
-									/* className="object-cover w-full h-64" */
-									alt=""
-								/>
-							</div>
-						</a>
-						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Desarrollador full stack en Influence Latam
-						</h5>
-						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Ayudantía Desarrollo web {" "}
-							<br className="hidden md:block" />
-							{" "}
-							<span className="inline-block text-deep-purple-accent-400">
-							Universidad Diego Portales
-							</span>
-						</h5> */}
-						<p className="mb-6 dark:text-white  text-gray-900">
-							Soy un desarrollador con experiencia full stack,
-							manejando tanto el frontend como el backend, bases
-							de datos y soluciones en la nube. Desarrollo y
-							mejoro software interno centrado en interfaces de
-							usuario, gestión de datos y bases de datos. Colaboro
-							en la digitalización de la empresa, automatizando
-							procesos manuales o mejorando su flujo actual. Mi
-							enfoque incluye la creación de soluciones eficientes
-							que se integran de manera óptima con diversas
-							plataformas de cloud computing, permitiéndome
-							implementar y mantener infraestructuras robustas
-							para soportar los requisitos del negocio.
+		<div className="py-20 bg-white dark:bg-gray-800">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+					viewport={{ once: true }}
+					className="text-center mb-16"
+				>
+					<h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+						Proyectos Destacados
+					</h2>
+					<div className="mt-4 max-w-3xl mx-auto">
+						<p className="text-xl text-gray-500 dark:text-gray-300">
+							Una selección de los proyectos en los que he trabajado
 						</p>
-						<hr className="mb-5 border-gray-300" />
-						<div className="flex items-center space-x-4">
-							<a
-								href="https://influence.cl/"
-								target="_blank"
-								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
-							>
-								Visitar página de la empresa{" "}
-								<span className="font-bold ml-1 text-lg align-[-3px]">
-									<ion-icon name="open"></ion-icon>
-								</span>
-							</a>
-						</div>
 					</div>
-				</div>
-			</div>
+				</motion.div>
 
-			{/* Proyecto 1 */}
-			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-10 lg:grid-cols-2">
-					<div className="lg:pr-10">
-						<a
-							href="/"
-							aria-label="Go Home"
-							title="Logo"
-							className="inline-block mb-5"
+				<div className="grid gap-10 lg:gap-16 md:grid-cols-1 lg:grid-cols-2">
+					{projects.map((project, index) => (
+						<motion.div
+							key={project.id}
+							initial={{ opacity: 0, y: 50 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ 
+								duration: 0.5,
+								delay: index * 0.1,
+								ease: "easeOut"
+							}}
+							viewport={{ once: true }}
+							whileHover={{ y: -10 }}
+							className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col h-full"
 						>
-							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-								<img
-									src={iconoLabeitIMG}
-									/* className="object-cover w-full h-64" */
-									alt=""
-								/>
+							<div className="relative">
+								<div className="absolute top-4 left-4 z-10 flex flex-wrap gap-1 max-w-[90%]">
+									{project.categories.map((category, idx) => {
+										const categoryColors = {
+											professional: "bg-green-500",
+											personal: "bg-blue-500",
+											fullstack: "bg-purple-500",
+											frontend: "bg-yellow-500",
+											education: "bg-red-500",
+											ecommerce: "bg-pink-500",
+											crud: "bg-indigo-500",
+											react: "bg-blue-400",
+											node: "bg-green-400",
+											teaching: "bg-red-400",
+										};
+										
+										return (
+											<span 
+												key={idx} 
+												className={`${categoryColors[category] || "bg-gray-500"} text-white text-xs font-bold px-2 py-1 rounded`}
+											>
+												{category.charAt(0).toUpperCase() + category.slice(1)}
+											</span>
+										);
+									})}
+								</div>
+								<div className="h-60 overflow-hidden">
+									<img
+										src={project.image}
+										alt={project.title}
+										className="object-cover w-full h-full transform transition duration-500 hover:scale-110"
+									/>
+								</div>
 							</div>
-						</a>
-						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Laboratorio Universidad Diego Portales
-						</h5>
-						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Laboratorio {""}
-							<br className="hidden md:block" />
-							Universidad{" "}
-							<span className="inline-block text-deep-purple-accent-400">
-								Diego Portales
-							</span>
-						</h5> */}
-						<p className="mb-6 dark:text-white text-gray-900">
-							Desarrollé y agregué funcionalidades para la
-							aplicación web labeit.udp.cl, incluyendo mejoras en
-							varios módulos de CRUD, mejoras de un sistema de
-							administración de inventario y configuración de
-							notificaciones automatizadas de préstamos por correo
-							electrónico.
-						</p>
-						<hr className="mb-5 border-gray-300" />
-						<div className="flex items-center space-x-4">
-							<a
-								href="https://labeit.udp.cl/"
-								target="_blank"
-								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
-							>
-								Ver proyecto{" "}
-								<span className="font-bold ml-1 text-lg align-[-3px]">
-									<ion-icon name="open"></ion-icon>
-								</span>
-							</a>
-						</div>
-					</div>
-					<div>
-						<img
-							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-							src={labeitIMG}
-							alt=""
-						/>
-					</div>
-				</div>
-			</div>
-
-			{/* Proyecto 2 */}
-			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-10 lg:grid-cols-2 flex">
-					<div className="lg:order-1 order-2">
-						<img
-							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-							src={ayudantiaIMG}
-							alt=""
-						/>
-					</div>
-					<div className="lg:pr-10 lg:order-2 order-1">
-						<a
-							href="/"
-							aria-label="Go Home"
-							title="Logo"
-							className="inline-block mb-5"
-						>
-							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-								<img
-									src={iconoayudantiaIMG}
-									/* className="object-cover w-full h-64" */
-									alt=""
-								/>
+							
+							<div className="p-6 flex-grow">
+								<div className="flex items-center mb-4">
+									<div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900">
+										<img
+											src={project.icon}
+											alt={`Icono de ${project.title}`}
+											className="w-6 h-6"
+										/>
+									</div>
+									<h3 className="ml-3 text-xl font-bold text-gray-900 dark:text-white">
+										{project.title}
+									</h3>
+								</div>
+								
+								<p className="text-gray-600 dark:text-gray-300 mb-6">
+									{project.description}
+								</p>
 							</div>
-						</a>
-						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Ayudantía Desarrollo web Universidad Diego Portales
-						</h5>
-						{/* 						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Ayudantía Desarrollo web {" "}
-							<br className="hidden md:block" />
-							{" "}
-							<span className="inline-block text-deep-purple-accent-400">
-							Universidad Diego Portales
-							</span>
-						</h5> */}
-						<p className="mb-6 dark:text-white  text-gray-900">
-							Me desempeño como ayudante de profesor en la
-							asignatura de desarrollo web, impartiendo cátedras y
-							guiando a los estudiantes en el proceso de
-							aprendizaje. Enseño las bases del desarrollo web a
-							través de la creación de un proyecto full stack, en
-							el cual se aplican diferentes tecnologías, tales
-							como diseño e interfaz, API y base de datos. Mi
-							objetivo es brindar a los estudiantes una
-							experiencia práctica y completa en el desarrollo
-							web, preparándolos para enfrentar los desafíos del
-							mundo laboral.
-						</p>
-						<hr className="mb-5 border-gray-300" />
-						<div className="flex items-center space-x-4">
-							<a
-								href="https://github.com/SebastianRiquelmeM/desarrollo-web-ayudantia"
-								target="_blank"
-								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
-							>
-								Ver proyecto{" "}
-								<span className="font-bold ml-1 text-lg align-[-3px]">
-									<ion-icon name="open"></ion-icon>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			{/* Proyecto 3 */}
-			<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-				<div className="grid gap-10 lg:grid-cols-2">
-					<div className="lg:pr-10">
-						<a
-							href="/"
-							aria-label="Go Home"
-							title="Logo"
-							className="inline-block mb-5"
-						>
-							<div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-								<img
-									src={iconoVentasThiamagIMG}
-									/* className="object-cover w-full h-64" */
-									alt=""
-								/>
+							
+							<div className="px-6 pb-6">
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-flex items-center justify-center w-full px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md shadow-sm transition-all duration-300"
+								>
+									{project.linkText}
+									<span className="ml-2">
+										<ion-icon name="open-outline"></ion-icon>
+									</span>
+								</a>
 							</div>
-						</a>
-						<h5 className="mb-4 text-4xl font-extrabold leading-none">
-							Tienda Ventas Thiamag
-						</h5>
-						<p className="dark:text-white mb-6 text-gray-900">
-							Desarrollé una aplicación web para promocionar y
-							exhibir los productos del emprendimiento
-							ventasthiamag. La aplicación permite a los clientes
-							potenciales explorar y obtener información detallada
-							sobre los productos, y les da la opción de contactar
-							al vendedor para obtener más información o realizar
-							una compra. Con esta herramienta, logramos aumentar
-							la visibilidad y la eficacia en la promoción de
-							nuestros productos, generando un aumento en las
-							ventas.
-						</p>
-						<hr className="mb-5 border-gray-300" />
-						<div className="flex items-center space-x-4">
-							<a
-								href="https://ventasthiamag.cl/"
-								target="_blank"
-								className="font-bold px-10 py-3 w-full mx-auto bg-indigo-600 text-white text-center rounded-md shadow-md block sm:w-auto"
-							>
-								Ver proyecto{" "}
-								<span className="font-bold ml-1 text-lg align-[-3px]">
-									<ion-icon name="open"></ion-icon>
-								</span>
-							</a>
-						</div>
-					</div>
-					<div>
-						<img
-							className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-							src={ventasThiamagIMG}
-							alt=""
-						/>
-					</div>
+						</motion.div>
+					))}
 				</div>
 			</div>
 		</div>

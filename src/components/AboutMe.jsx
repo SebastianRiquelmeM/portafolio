@@ -1,33 +1,77 @@
 import React from "react";
+import { motion } from "framer-motion";
 import aboutMe from "/img/undraw_code_review_re_woeb.svg";
 
 export const AboutMe = () => {
 	return (
-		<div>
-			{/* About me, with image in left and text in right */}
-			<div className="flex flex-wrap items-center justify-center mt-48 md:mt-96">
-				<div className="w-full lg:w-1/2 lg:px-32 px-5">
-					<h1 className="text-center dark:text-white text-3xl md:text-5xl font-bold text-gray-800 mb-14">
-						Acerca de mi
-					</h1>
-					<p className="text-gray-600 dark:text-white mb-4 text-center">
-						Soy desarrollador web experimentado en tecnologías
-						backend y frontend, actualmente estudiando Ingeniería
-						Civil en Informática y Telecomunicaciones. Como
-						desarrollador full stack, he aplicado mis habilidades en
-						diversos proyectos impactando positivamente. Además,
-						como ayudante de profesor en la Universidad Diego
-						Portales, he compartido mis conocimientos de desarrollo
-						web, contribuyendo al crecimiento de otros en la área.
-					</p>
-				</div>
-				<div className="w-full lg:w-1/2 justify-center lg:mt-0 mt-20">
-					{/* <ImageSVG /> */}
-					<img
-						className="w-2/3 mx-auto lg:mx-0"
-						src={aboutMe}
-						alt="about me"
-					/>
+		<div className="py-20 bg-gray-50 dark:bg-gray-900">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<motion.div 
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+					viewport={{ once: true }}
+					className="text-center mb-16"
+				>
+					<h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+						Acerca de mí
+					</h2>
+					<div className="mt-4 max-w-3xl mx-auto">
+						<p className="text-xl text-gray-500 dark:text-gray-300">
+							Desarrollador full stack especializado en la transformación digital de empresas
+						</p>
+					</div>
+				</motion.div>
+
+				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
+					<motion.div 
+						initial={{ opacity: 0, x: -50 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.5, delay: 0.2 }}
+						viewport={{ once: true }}
+						className="md:w-1/2"
+					>
+						<img
+							className="w-full max-w-lg mx-auto rounded-lg shadow-xl"
+							src={aboutMe}
+							alt="Desarrollador trabajando"
+						/>
+					</motion.div>
+					
+					<motion.div 
+						initial={{ opacity: 0, x: 50 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.5, delay: 0.4 }}
+						viewport={{ once: true }}
+						className="md:w-1/2 space-y-6"
+					>
+						<p className="text-lg text-gray-600 dark:text-gray-300">
+							Soy un desarrollador full stack con experiencia comprobada en transformar procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad.
+						</p>
+						
+						<p className="text-lg text-gray-600 dark:text-gray-300">
+							Me especializo en diseñar aplicaciones web modulares que mejoran la visibilidad financiera y duplican márgenes operativos. He liderado el desarrollo de soluciones tecnológicas con impacto directo en decisiones estratégicas y optimización de recursos para marketing con influencers.
+						</p>
+						
+						<p className="text-lg text-gray-600 dark:text-gray-300">
+							Actualmente, estoy terminando mi carrera de Ingeniería Civil en Informática y Telecomunicaciones en la Universidad Diego Portales, donde también me desempeño como ayudante de profesor en el área de desarrollo web.
+						</p>
+						
+						<div className="flex flex-wrap gap-3 pt-2">
+							<span className="px-4 py-2 rounded-full text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-white font-semibold text-sm flex align-center w-max">
+								Desarrollo Full Stack
+							</span>
+							<span className="px-4 py-2 rounded-full text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-white font-semibold text-sm flex align-center w-max">
+								Arquitectura en la Nube
+							</span>
+							<span className="px-4 py-2 rounded-full text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-white font-semibold text-sm flex align-center w-max">
+								Optimización de Procesos
+							</span>
+							<span className="px-4 py-2 rounded-full text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-white font-semibold text-sm flex align-center w-max">
+								Diseño de Sistemas
+							</span>
+						</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

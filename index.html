@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/logo.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sebastián</title>
+		<meta name="description" content="Sebastián Riquelme - Desarrollador Full Stack. Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta name="keywords" content="desarrollador full stack, sebastián riquelme, react, node.js, desarrollo web, frontend, backend, programación" />
+		<meta name="author" content="Sebastián Riquelme Muñoz" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://sebastianriquelme.cl/" />
+		<meta property="og:title" content="Sebastián Riquelme - Desarrollador Full Stack" />
+		<meta property="og:description" content="Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta property="og:image" content="/img/og-image.jpg" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://sebastianriquelme.cl/" />
+		<meta property="twitter:title" content="Sebastián Riquelme - Desarrollador Full Stack" />
+		<meta property="twitter:description" content="Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta property="twitter:image" content="/img/og-image.jpg" />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		
+		<title>Sebastián Riquelme | Desarrollador Full Stack</title>
+		
+		<style>
+			:root {
+				--font-primary: 'Poppins', sans-serif;
+				--font-secondary: 'Inter', sans-serif;
+			}
+			
+			body {
+				font-family: var(--font-secondary);
+			}
+			
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-primary);
+			}
+			
+			/* Scrollbar personalizado */
+			::-webkit-scrollbar {
+				width: 10px;
+			}
+			
+			::-webkit-scrollbar-track {
+				background: #f1f1f1;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				background: #4f46e5;
+				border-radius: 5px;
+			}
+			
+			::-webkit-scrollbar-thumb:hover {
+				background: #3730a3;
+			}
+			
+			.dark ::-webkit-scrollbar-track {
+				background: #1f2937;
+			}
+			
+			.dark ::-webkit-scrollbar-thumb {
+				background: #6366f1;
+			}
+			
+			.dark ::-webkit-scrollbar-thumb:hover {
+				background: #818cf8;
+			}
+			
+			/* Animaciones y transiciones globales */
+			* {
+				transition: color 0.2s, background-color 0.2s;
+			}
+		</style>
 	</head>
-	<body class="bg-gray-100 h-screen dark:bg-slate-900">
+	<body class="bg-gray-100 dark:bg-gray-900">
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
 		<script
