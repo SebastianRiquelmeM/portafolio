@@ -68,26 +68,11 @@ export default () => {
 
 	return (
 		<>
-			{/* <header>
-				<nav className="flex justify-end">
-					<ul>
-						<li className="mt-5 mr-5 md:mr-20">
-							<Switcher />
-						</li>
-					</ul>
-				</nav>
-			</header> */}
-			{/* <motion.section
-				variants={containerVariants}
-				initial="hidden"
-				animate="visible"
-				className="mt-24 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8"
-			> */}
 			<motion.section
 				variants={containerVariants}
 				initial="hidden"
 				animate="visible"
-				className="mx-auto max-w-screen-xl pb-4 px-4 sm:px-8 pt-28"
+				className="mx-auto max-w-screen-xl pb-4 px-4 sm:px-8 pt-28 transition-colors duration-500"
 			>
 				<div className="text-center space-y-4">
 					<motion.div className="relative inline-block">

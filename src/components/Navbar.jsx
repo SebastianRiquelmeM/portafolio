@@ -36,11 +36,11 @@ const Navbar = () => {
 	// 		: "bg-transparent py-4"
 	// }`;
 
-const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-    scrolled
-        ? "bg-white dark:bg-gray-700 shadow-md py-2"
-        : "bg-gray-700 dark:bg-gray-700 py-4"
-}`;
+	const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+		scrolled
+			? "bg-white dark:bg-gray-900 shadow-md py-2"
+			: "bg-transparent dark:bg-gray-900/70 py-4"
+	}`;
 
 	return (
 		<nav className={navbarClasses}>
