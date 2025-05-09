@@ -15,9 +15,9 @@ const Navbar = () => {
 			}
 		};
 
-		document.addEventListener('scroll', handleScroll);
+		document.addEventListener("scroll", handleScroll);
 		return () => {
-			document.removeEventListener('scroll', handleScroll);
+			document.removeEventListener("scroll", handleScroll);
 		};
 	}, [scrolled]);
 
@@ -27,21 +27,27 @@ const Navbar = () => {
 		{ name: "Experiencia", to: "experience" },
 		{ name: "Tecnologías", to: "technologies" },
 		{ name: "Proyectos", to: "projects" },
-		{ name: "Contacto", to: "contact" }
+		{ name: "Contacto", to: "contact" },
 	];
 
-	const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-		scrolled 
-			? 'bg-white dark:bg-gray-900 shadow-md py-2' 
-			: 'bg-transparent py-4'
-	}`;
+	// const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+	// 	scrolled
+	// 		? "bg-white dark:bg-gray-900 shadow-md py-2"
+	// 		: "bg-transparent py-4"
+	// }`;
+
+const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    scrolled
+        ? "bg-white dark:bg-gray-700 shadow-md py-2"
+        : "bg-gray-700 dark:bg-gray-700 py-4"
+}`;
 
 	return (
 		<nav className={navbarClasses}>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center">
 					{/* Logo & Brand with Profile Pic */}
-					<motion.div 
+					<motion.div
 						initial={{ opacity: 0, x: -20 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5 }}
@@ -54,15 +60,18 @@ const Navbar = () => {
 							className="flex items-center cursor-pointer"
 						>
 							<div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-								<img 
-									src="/img/Perfil.jpg" 
-									alt="Sebastián Riquelme" 
+								<img
+									src="/img/Perfil.jpg"
+									alt="Sebastián Riquelme"
 									className="w-full h-full object-cover"
 								/>
 							</div>
 							<div>
 								<span className="font-bold text-gray-900 dark:text-white text-lg">
-									Sebastián <span className="text-indigo-600 dark:text-indigo-400">Riquelme</span>
+									Sebastián{" "}
+									<span className="text-indigo-600 dark:text-indigo-400">
+										Riquelme
+									</span>
 								</span>
 								<p className="text-xs text-gray-600 dark:text-gray-400 hidden sm:block">
 									Ingeniero Civil en Informática
@@ -72,7 +81,7 @@ const Navbar = () => {
 					</motion.div>
 
 					{/* Desktop Navigation */}
-					<motion.div 
+					<motion.div
 						initial={{ opacity: 0, y: -10 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.1 }}
