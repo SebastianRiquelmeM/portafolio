@@ -200,8 +200,7 @@ export const Footer = () => {
 
 				<div className="mt-12 border-t border-gray-700 pt-8">
 					<p className="text-base text-gray-400 text-center">
-						&copy; {currentYear} Sebastián Riquelme Muñoz. Todos los
-						derechos reservados.
+						&copy; {currentYear} Sebastián Riquelme Muñoz.
 					</p>
 				</div>
 			</div>
