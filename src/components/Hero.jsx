@@ -120,11 +120,13 @@ export default () => {
 					>
 						<TypeAnimation
 							sequence={[
+								"Ingeniero Civil en Informática",
+								2000,
 								"Desarrollador Full Stack",
 								2000,
-								"Ingeniero Civil en Informática y Telecomunicaciones",
-								2000,
 								"Especialista en React & Node.js",
+								2000,
+								"Líder Técnico de Proyectos",
 								2000,
 							]}
 							wrapper="span"
@@ -133,6 +135,17 @@ export default () => {
 							className="text-indigo-600 dark:text-indigo-400"
 						/>
 					</motion.div>
+
+					<motion.p
+						variants={itemVariants}
+						className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg mt-6"
+					>
+						Ingeniero Civil en Informática especializado en
+						transformar procesos manuales en sistemas digitales
+						escalables. Desarrollé soluciones que duplican márgenes
+						operativos gestionando 8,000+ influenciadores en 7
+						países.
+					</motion.p>
 
 					<motion.p
 						variants={itemVariants}
