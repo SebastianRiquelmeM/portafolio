@@ -21,26 +21,62 @@ export const Contact = () => {
 		}));
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setIsSubmitting(true);
+		setSubmitError(false);
+		setSubmitSuccess(false);
 
-		// Simulación de envío de formulario
-		setTimeout(() => {
-			setIsSubmitting(false);
-			setSubmitSuccess(true);
-			setFormData({
-				name: "",
-				email: "",
-				subject: "",
-				message: "",
+		// Crear FormData con los datos del formulario
+
+		const formDataToSend = new FormData();
+
+		// Web3Forms API key - Seguro exponerlo, solo envía a mi email registrado
+
+		formDataToSend.append(
+			"access_key",
+			"651c5462-eb71-45d1-9357-2547ec24696f"
+		);
+		formDataToSend.append("name", formData.name);
+		formDataToSend.append("email", formData.email);
+		formDataToSend.append("subject", formData.subject);
+		formDataToSend.append("message", formData.message);
+
+		// Configuraciones adicionales opcionales
+		formDataToSend.append("from_name", "Portafolio Sebastián Riquelme");
+		formDataToSend.append("redirect", "false");
+
+		try {
+			const response = await fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: formDataToSend,
 			});
 
-			// Reset success message after 5 seconds
-			setTimeout(() => {
-				setSubmitSuccess(false);
-			}, 5000);
-		}, 1500);
+			const data = await response.json();
+
+			if (data.success) {
+				setSubmitSuccess(true);
+				setFormData({
+					name: "",
+					email: "",
+					subject: "",
+					message: "",
+				});
+
+				// Reset success message after 5 seconds
+				setTimeout(() => {
+					setSubmitSuccess(false);
+				}, 5000);
+			} else {
+				console.log("Error", data);
+				setSubmitError(true);
+			}
+		} catch (error) {
+			console.error("Error:", error);
+			setSubmitError(true);
+		} finally {
+			setIsSubmitting(false);
+		}
 	};
 
 	return (
