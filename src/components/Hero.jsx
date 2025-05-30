@@ -201,7 +201,7 @@ export default () => {
 					className="mt-12 dark:text-white text-5xl justify-center items-center flex gap-8"
 				>
 					<motion.a
-						href="https://www.linkedin.com/in/sebasti%C3%A1n-riquelme-566a16261/"
+						href="https://linkedin.com/in/sebastiánriquelme"
 						target="_blank"
 						whileHover={{ scale: 1.2, color: "#4F46E5" }}
 						whileTap={{ scale: 0.9 }}

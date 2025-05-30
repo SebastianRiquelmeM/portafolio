@@ -26,7 +26,7 @@ export const Footer = () => {
 						</p>
 						<div className="flex space-x-6">
 							<a
-								href="https://www.linkedin.com/in/sebastián-riquelme-566a16261/"
+								href="https://linkedin.com/in/sebastiánriquelme"
 								target="_blank"
 								rel="noreferrer"
 								className="text-gray-400 hover:text-indigo-400"

@@ -26,6 +26,7 @@ const Navbar = () => {
 		{ name: "Sobre mí", to: "aboutme" },
 		{ name: "Experiencia", to: "experience" },
 		{ name: "Tecnologías", to: "technologies" },
+		{ name: "Competencias", to: "skills" }, // Agregar esta línea
 		{ name: "Proyectos", to: "projects" },
 		{ name: "Contacto", to: "contact" },
 	];

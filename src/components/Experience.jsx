@@ -12,7 +12,7 @@ export const Experience = () => {
 				"Diseñé y desarrollé un sistema integral de gestión de campañas (proyecto de título) que proyecta duplicar el margen operativo (10% a 20%) al proporcionar visibilidad completa sobre el flujo de caja, controlando el 100% de los movimientos financieros de la empresa.",
 				"Implementé cuatro módulos críticos (Cotizaciones, Cobranza, Lista de Influenciadores, Producción) que integran el ciclo financiero completo, con algoritmos para calcular métricas clave como costo por alcance (CPA) y costo por engagement (CPE).",
 				"Migré procesos críticos desde Google Sheets a una aplicación web modular con autenticación corporativa, permitiendo gestionar y estandarizar el trabajo con 8,000+ influenciadores en 7 países.",
-				"Diseñé una arquitectura en Google Cloud (App Engine + Cloud SQL) que permite a los Account Managers gestionar eficientemente 5-7 campañas simultáneas con visibilidad en tiempo real del presupuesto y alertas ante desviaciones.",
+				"Implementé una arquitectura en Google Cloud (App Engine + Cloud SQL) que incrementó la eficiencia de gestión de campañas en un 200%, proporcionando a los Account Managers visibilidad en tiempo real del presupuesto y alertas ante desviaciones.",
 				"Creé benchmarks dinámicos basados en datos actuales que reemplazan indicadores estáticos de hace 3 años, mejorando significativamente la precisión de proyecciones financieras.",
 				"Establecí el dominio appinfluence.cl con certificado SSL, configurando escalamiento automático y monitoreo de rendimiento en producción.",
 			],
@@ -33,15 +33,18 @@ export const Experience = () => {
 			location: "Santiago de Chile",
 			period: "2023",
 			description: [
-				"Impartí clases teórico-prácticas presenciales a un curso de 34 estudiantes de ingeniería durante un mes, logrando que el 90% completara exitosamente los proyectos asignados.",
-				"Diseñé ejercicios prácticos enfocados en arquitecturas web modernas y desarrollo full stack aplicable a entornos reales.",
+				"Lideré la planificación e impartición de clases teórico-prácticas presenciales a 34 estudiantes de ingeniería durante un mes, desarrollando habilidades de expresión oral y gestión de aula que resultaron en 90% de éxito estudiantil.",
+				"Planifiqué y ejecuté estrategias pedagógicas innovadoras, diseñando ejercicios prácticos enfocados en arquitecturas web modernas y desarrollo full stack aplicable a entornos reales.",
+				"Desarrollé capacidades de liderazgo académico, gestionando dinámicas de grupo y adaptando metodologías de enseñanza según las necesidades individuales de aprendizaje.",
+				"Fortalecí habilidades de comunicación técnica, transmitiendo conceptos complejos de manera clara y accesible a audiencias con diferentes niveles de conocimiento.",
 			],
 			skills: [
-				"Enseñanza",
-				"Desarrollo Web",
-				"Arquitectura",
-				"Full Stack",
-				"Liderazgo",
+				"Liderazgo Académico",
+				"Planificación Pedagógica",
+				"Expresión Oral",
+				"Gestión de Grupos",
+				"Comunicación Técnica",
+				"Metodologías de Enseñanza",
 			],
 		},
 		{
@@ -50,8 +53,10 @@ export const Experience = () => {
 			location: "Santiago de Chile",
 			period: "Julio 2022 – Diciembre 2023",
 			description: [
-				"Dicté clases prácticas a un total de 258 estudiantes durante varios semestres, con un enfoque hands-on que logró que el 85% aprobara el curso.",
-				"Diseñé y evalué proyectos full stack que integraban APIs reales y bases de datos, preparando a los estudiantes para desafíos profesionales actuales.",
+				"Lideré clases prácticas para 258 estudiantes durante varios semestres, implementando metodologías hands-on que aumentaron la tasa de aprobación al 85%.",
+				"Desarrollé y evalué proyectos full stack integrando APIs reales y bases de datos, preparando estudiantes para desafíos profesionales actuales.",
+				"Mentoré individualmente a estudiantes con dificultades, implementando estrategias de apoyo personalizado que mejoraron significativamente su rendimiento académico.",
+				"Colaboré estrechamente con profesores y coordinadores académicos para optimizar contenidos curriculares y metodologías de evaluación.",
 			],
 			skills: [
 				"Enseñanza",
@@ -69,7 +74,7 @@ export const Experience = () => {
 			period: "Octubre 2022 - Enero 2023",
 			description: [
 				"Colaboré en el rediseño y optimización de un sitio web para una empresa minera, implementando mejoras técnicas para garantizar un diseño responsivo y navegación óptima en dispositivos móviles.",
-				"Investigué e implementé soluciones para la migración de bases de datos y módulos personalizados en el software AzurSoft (basado en Odoo 12), documentando procesos críticos para actualizaciones futuras.",
+				"Implementé soluciones para la migración de bases de datos y módulos personalizados en el software AzurSoft (basado en Odoo 12), documentando procesos críticos para actualizaciones futuras.",
 				"Elaboré informes técnicos detallados sobre herramientas de desarrollo óptimas para Odoo y procesos de migración de módulos entre diferentes versiones del software.",
 				"Trabajé en un entorno multidisciplinario con profesionales de distintas áreas, mejorando mis habilidades de comunicación técnica y trabajo en equipo remoto.",
 			],
@@ -90,6 +95,8 @@ export const Experience = () => {
 			description: [
 				"Desarrollé funcionalidades clave para la aplicación web labeit.udp.cl, mejorando módulos CRUD y sistemas de administración de inventario para optimizar la gestión del laboratorio.",
 				"Implementé un sistema automatizado de notificaciones por correo que mejoró significativamente el proceso de préstamos de equipos para los estudiantes de la universidad.",
+				"Colaboré con personal administrativo y técnico del laboratorio para identificar necesidades operativas y traducirlas en soluciones tecnológicas efectivas.",
+				"Optimicé flujos de trabajo existentes, reduciendo tiempo de procesamiento de solicitudes y mejorando la experiencia del usuario estudiantil.",
 			],
 			skills: [
 				"CRUD",

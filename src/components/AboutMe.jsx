@@ -47,34 +47,15 @@ export const AboutMe = () => {
 						className="md:w-1/2 space-y-6"
 					>
 						<p className="text-lg text-gray-600 dark:text-gray-300">
-							Soy un Ingeniero Civil en Informática y
-							desarrollador full stack con experiencia comprobada
-							en transformar procesos manuales en sistemas
-							digitales escalables que optimizan operaciones y
-							aumentan rentabilidad. Me especializo en diseñar
-							aplicaciones web modulares que mejoran la
-							visibilidad financiera y duplican márgenes
-							operativos.
-						</p>
-
-						<p className="text-lg text-gray-600 dark:text-gray-300">
-							He liderado el desarrollo de soluciones tecnológicas
-							con impacto directo en decisiones estratégicas y
-							optimización de recursos para marketing con
-							influencers. Mi proyecto de título, implementado en
-							producción en Influence Latam, proyecta duplicar el
-							margen operativo de 10% a 20% al proporcionar
-							visibilidad completa sobre el flujo de caja,
-							controlando el 100% de los movimientos financieros.
-						</p>
-
-						<p className="text-lg text-gray-600 dark:text-gray-300">
-							Me titulé de Ingeniería Civil en Informática y
-							Telecomunicaciones en la Universidad Diego Portales,
-							donde también me desempeñé como ayudante y profesor
-							sustituto en el área de desarrollo web, habiendo
-							guiado exitosamente a más de 290 estudiantes en sus
-							proyectos full stack.
+							Ingeniero Civil en Informática especializado en
+							transformar procesos manuales en sistemas digitales
+							escalables. Lideré el desarrollo de un sistema que
+							duplicó el margen operativo de 10% a 20%,
+							gestionando el 100% de los movimientos financieros y
+							optimizando operaciones con 8,000+ influenciadores
+							en 7 países. Guié exitosamente a más de 290
+							estudiantes universitarios en proyectos full stack,
+							logrando 90% de aprobación en mis cursos.
 						</p>
 
 						<div className="flex flex-wrap gap-3 pt-2">
