@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastián Riquelme</title>
-    <script type="module" crossorigin src="/portafolio/assets/index-0313753f.js"></script>
-    <link rel="stylesheet" href="/portafolio/assets/index-1130252b.css">
-  </head>
-  <body class="bg-gray-100 h-screen dark:bg-slate-900">
-    <div id="root"></div>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/logo-acfd6690.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Sebastián Riquelme - Desarrollador Full Stack. Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta name="keywords" content="desarrollador full stack, sebastián riquelme, react, node.js, desarrollo web, frontend, backend, programación" />
+		<meta name="author" content="Sebastián Riquelme Muñoz" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://sebastianriquelme.cl/" />
+		<meta property="og:title" content="Sebastián Riquelme - Desarrollador Full Stack" />
+		<meta property="og:description" content="Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta property="og:image" content="/img/og-image.jpg" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://sebastianriquelme.cl/" />
+		<meta property="twitter:title" content="Sebastián Riquelme - Desarrollador Full Stack" />
+		<meta property="twitter:description" content="Transformo procesos manuales en sistemas digitales escalables que optimizan operaciones y aumentan rentabilidad." />
+		<meta property="twitter:image" content="/img/og-image.jpg" />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		
+		<!-- Devicon para iconos de tecnologías -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+		
+		<title>Sebastián Riquelme | Desarrollador Full Stack</title>
+		
+		<style>
+			:root {
+				--font-primary: 'Poppins', sans-serif;
+				--font-secondary: 'Inter', sans-serif;
+			}
+			
+			body {
+				font-family: var(--font-secondary);
+			}
+			
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-primary);
+			}
+			
+			/* Scrollbar personalizado */
+			::-webkit-scrollbar {
+				width: 10px;
+			}
+			
+			::-webkit-scrollbar-track {
+				background: #f1f1f1;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				background: #4f46e5;
+				border-radius: 5px;
+			}
+			
+			::-webkit-scrollbar-thumb:hover {
+				background: #3730a3;
+			}
+			
+			.dark ::-webkit-scrollbar-track {
+				background: #1f2937;
+			}
+			
+			.dark ::-webkit-scrollbar-thumb {
+				background: #6366f1;
+			}
+			
+			.dark ::-webkit-scrollbar-thumb:hover {
+				background: #818cf8;
+			}
+			
+			/* Animaciones y transiciones globales */
+			* {
+				transition: color 0.2s, background-color 0.2s;
+			}
+		</style>
+		
+		<!-- Script para inicializar tema antes de que se renderice la página -->
+		<script>
+			// Función para establecer el tema inicial
+			function initTheme() {
+				// Obtener tema guardado en localStorage
+				const savedTheme = localStorage.getItem('theme');
+				
+				if (savedTheme) {
+					// Aplicar tema guardado
+					document.documentElement.classList.add(savedTheme);
+				} else {
+					// Usar preferencia del sistema
+					if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.documentElement.classList.add('dark');
+						localStorage.setItem('theme', 'dark');
+					} else {
+						document.documentElement.classList.add('light');
+						localStorage.setItem('theme', 'light');
+					}
+				}
+			}
+			
+			// Ejecutar inmediatamente para evitar parpadeo
+			initTheme();
+		</script>
+		<script type="module" crossorigin src="/assets/index-974b93ed.js"></script>
+		<link rel="stylesheet" href="/assets/index-376c5d98.css">
+	</head>
+	<body>
+		<div id="root"></div>
+		
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
 </html>
