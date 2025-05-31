@@ -48,7 +48,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className="bg-white dark:bg-gray-900 transition-colors duration-500">
+		<div className="bg-white dark:bg-gray-900 transition-colors duration-500 overflow-x-hidden">
 			{/* Partículas de fondo animadas */}
 			<Particles
 				count={30}
