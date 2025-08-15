@@ -1,0 +1,6 @@
+@echo off
+echo Instalando dependencias...
+npm install
+echo.
+echo Iniciando servidor de desarrollo...
+npm run dev
