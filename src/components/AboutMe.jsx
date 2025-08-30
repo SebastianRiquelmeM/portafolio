@@ -23,18 +23,18 @@ export const AboutMe = () => {
 					</div>
 				</motion.div>
 
-				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
+				<div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}
 						viewport={{ once: true }}
-						className="md:w-1/2"
+						className="md:w-5/12"
 					>
 						<img
 							src="/img/undraw_code_review_re_woeb.svg"
 							alt="Desarrollador trabajando"
-							className="w-full h-auto object-contain"
+							className="w-full max-w-md h-auto object-contain mx-auto md:mx-0"
 						/>
 					</motion.div>
 
@@ -43,7 +43,7 @@ export const AboutMe = () => {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5, delay: 0.4 }}
 						viewport={{ once: true }}
-						className="md:w-1/2 space-y-6"
+						className="md:w-7/12 space-y-6"
 					>
 						<p className="text-lg text-gray-600 dark:text-gray-300">
 							Ingeniero Civil en Informática especializado en
