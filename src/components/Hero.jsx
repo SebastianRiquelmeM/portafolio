@@ -192,7 +192,8 @@ export default () => {
 				</motion.a>
 			</motion.div>
 
-			{/* Foto de perfil con efecto desvanecido */}
+			{/* Foto de perfil con efecto desvanecido (desactivada temporalmente) */}
+			{/*
 			<motion.div
 				variants={itemVariants}
 				className="mt-12 flex justify-center"
@@ -203,10 +204,10 @@ export default () => {
 						alt="Sebastián Riquelme"
 						className="w-full h-full object-cover object-top"
 					/>
-					{/* Overlay de desvanecido para integrar con el fondo */}
 					<div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white dark:to-gray-900"></div>
 				</div>
 			</motion.div>
+			*/}
 
 			<motion.div
 				variants={itemVariants}
