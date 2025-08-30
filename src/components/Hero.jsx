@@ -92,9 +92,9 @@ export default () => {
 					variants={titleVariants}
 					className="text-gray-800 dark:text-white font-bold text-5xl md:text-7xl"
 				>
-					<span>Sebastián</span>
+					<span className="block md:inline">Sebastián</span>
 					<motion.span
-						className="ml-2 text-indigo-600 dark:text-indigo-400"
+						className="block md:inline md:ml-2 text-indigo-600 dark:text-indigo-400"
 						animate={{
 							color: ["#4F46E5", "#818CF8", "#4F46E5"],
 							textShadow: [
