@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const Experience = () => {
 	const experiences = [
 		{
-			title: "Desarrollador Full Stack — Líder Técnico de Proyecto",
+			title: "Desarrollador Full Stack",
 			company: "Influence Latam",
 			location: "Santiago de Chile - Vitacura",
 			period: "Marzo 2023 – Actualidad",

@@ -17,7 +17,7 @@ export const Projects = () => {
 			description:
 				"Proyecto de título implementado en producción que duplica el margen operativo (10% a 20%) proporcionando visibilidad completa sobre el flujo de caja y controlando el 100% de los movimientos financieros.",
 			detailedDescription:
-				"Como Líder Técnico de Proyecto, diseñé y desarrollé un sistema integral de gestión de campañas que transformó los procesos manuales de la empresa. El sistema incluye cuatro módulos críticos que integran el ciclo financiero completo, migró procesos desde Google Sheets a una aplicación web modular, y gestiona 8,000+ influenciadores en 7 países mediante arquitectura escalable en Google Cloud.",
+				"Diseñé y desarrollé un sistema integral de gestión de campañas que transformó los procesos manuales de la empresa. El sistema incluye cuatro módulos críticos que integran el ciclo financiero completo, migró procesos desde Google Sheets a una aplicación web modular, y gestiona 8,000+ influenciadores en 7 países mediante arquitectura escalable en Google Cloud.",
 			image: influenceIMG,
 			icon: iconoInfluenceIMG,
 			link: "https://influence.cl/",

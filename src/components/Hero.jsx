@@ -126,8 +126,6 @@ export default () => {
 								2000,
 								"Especialista en React & Node.js",
 								2000,
-								"Líder Técnico de Proyectos",
-								2000,
 							]}
 							wrapper="span"
 							speed={50}
