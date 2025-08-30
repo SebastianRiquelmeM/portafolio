@@ -4,36 +4,39 @@ Este repositorio contiene mi portafolio profesional como Desarrollador Full Stac
 
 ## Características
 
-- Diseño moderno y responsivo usando Tailwind CSS
-- Animaciones fluidas con Framer Motion
-- Modo oscuro/claro con persistencia
-- Secciones organizadas destacando experiencia y proyectos
-- Optimizado para SEO
+-   Diseño moderno y responsivo usando Tailwind CSS
+-   Animaciones fluidas con Framer Motion
+-   Modo oscuro/claro con persistencia
+-   Secciones organizadas destacando experiencia y proyectos
+-   Optimizado para SEO
 
 ## Tecnologías utilizadas
 
-- React.js
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React Type Animation
-- React Scroll
-- Ion Icons
+-   React.js
+-   Vite
+-   Tailwind CSS
+-   Framer Motion
+-   React Type Animation
+-   React Scroll
+-   Ion Icons
 
 ## Instalación
 
 1. Clona este repositorio:
+
 ```bash
 git clone https://github.com/SebastianRiquelmeM/portafolio.git
 cd portafolio
 ```
 
 2. Instala las dependencias:
+
 ```bash
 npm install
 ```
 
 3. Inicia el servidor de desarrollo:
+
 ```bash
 npm run dev
 ```
@@ -42,29 +45,33 @@ npm run dev
 
 ## Despliegue
 
-Para compilar el proyecto para producción:
+Producción (Dokploy): el build y el deploy son automáticos al hacer push a la rama `master` (Dokploy monitorea esta rama).
 
-```bash
-npm run build
-```
+### Fusionar dev en master
 
-Para desplegar en GitHub Pages:
+```pwsh
+# Actualizar rama master
+git checkout master
+git pull origin master
 
-```bash
-npm run deploy
+# Fusionar cambios desde dev
+git merge dev
+
+# Resolver conflictos si existen y hacer commit
+git push origin master
 ```
 
 ## Estructura del proyecto
 
-- `/src/components` - Componentes React organizados por sección
-- `/public/img` - Imágenes y recursos estáticos
-- `/public/pdf` - Archivos PDF como el CV
+-   `/src/components` - Componentes React organizados por sección
+-   `/public/img` - Imágenes y recursos estáticos
+-   `/public/pdf` - Archivos PDF como el CV
 
 ## Personalización
 
-- La mayoría de los datos están organizados en arrays en los componentes respectivos
-- Las imágenes se pueden reemplazar en la carpeta `/public/img`
-- Los estilos principales se configuran mediante Tailwind CSS en `tailwind.config.cjs`
+-   La mayoría de los datos están organizados en arrays en los componentes respectivos
+-   Las imágenes se pueden reemplazar en la carpeta `/public/img`
+-   Los estilos principales se configuran mediante Tailwind CSS en `tailwind.config.cjs`
 
 ## Licencia
 
@@ -72,6 +79,6 @@ Este proyecto está bajo la Licencia MIT.
 
 ## Contacto
 
-- **Email**: riquelmemunozsebastian@gmail.com
-- **LinkedIn**: [Sebastián Riquelme](https://www.linkedin.com/in/sebastián-riquelme-566a16261/)
-- **GitHub**: [SebastianRiquelmeM](https://github.com/SebastianRiquelmeM)
+-   **Email**: riquelmemunozsebastian@gmail.com
+-   **LinkedIn**: [Sebastián Riquelme](https://www.linkedin.com/in/sebastián-riquelme-566a16261/)
+-   **GitHub**: [SebastianRiquelmeM](https://github.com/SebastianRiquelmeM)
