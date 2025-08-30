@@ -31,12 +31,6 @@ const Navbar = () => {
 		{ name: "Contacto", to: "contact" },
 	];
 
-	// const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-	// 	scrolled
-	// 		? "bg-white dark:bg-gray-900 shadow-md py-2"
-	// 		: "bg-transparent py-4"
-	// }`;
-
 	const navbarClasses = `fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
 		scrolled
 			? "bg-white dark:bg-gray-900 shadow-md py-2"
@@ -64,7 +58,7 @@ const Navbar = () => {
 								<img
 									src="/img/Perfil.jpg"
 									alt="Sebastián Riquelme"
-									className="w-full h-full object-cover"
+									className="w-full h-full object-cover object-top"
 								/>
 							</div>
 							<div>
@@ -88,9 +82,9 @@ const Navbar = () => {
 						transition={{ duration: 0.5, delay: 0.1 }}
 						className="hidden md:flex items-center space-x-8"
 					>
-						{navLinks.map((link, index) => (
+						{navLinks.map((link) => (
 							<Link
-								key={index}
+								key={link.to}
 								to={link.to}
 								smooth={true}
 								duration={500}
@@ -161,9 +155,9 @@ const Navbar = () => {
 						className="md:hidden bg-white dark:bg-gray-900 shadow-lg"
 					>
 						<div className="px-2 pt-2 pb-4 space-y-1">
-							{navLinks.map((link, index) => (
+							{navLinks.map((link) => (
 								<Link
-									key={index}
+									key={link.to}
 									to={link.to}
 									smooth={true}
 									duration={500}
