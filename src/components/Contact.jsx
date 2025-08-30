@@ -153,18 +153,6 @@ export const Contact = () => {
 										class="text-2xl"
 									></ion-icon>
 								</a>
-								<a
-									href="https://github.com/SebastianRiquelmeM"
-									target="_blank"
-									rel="noreferrer"
-									className="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
-								>
-									<span className="sr-only">GitHub</span>
-									<ion-icon
-										name="logo-github"
-										class="text-2xl"
-									></ion-icon>
-								</a>
 							</div>
 						</div>
 					</motion.div>
