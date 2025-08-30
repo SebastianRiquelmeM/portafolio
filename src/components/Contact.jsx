@@ -27,34 +27,33 @@ export const Contact = () => {
 		setSubmitError(false);
 		setSubmitSuccess(false);
 
-		// Crear FormData con los datos del formulario
-
-		const formDataToSend = new FormData();
-
-		// Web3Forms API key - Seguro exponerlo, solo envía a mi email registrado
-
-		formDataToSend.append(
-			"access_key",
-			"651c5462-eb71-45d1-9357-2547ec24696f"
-		);
-		formDataToSend.append("name", formData.name);
-		formDataToSend.append("email", formData.email);
-		formDataToSend.append("subject", formData.subject);
-		formDataToSend.append("message", formData.message);
-
-		// Configuraciones adicionales opcionales
-		formDataToSend.append("from_name", "Portafolio Sebastián Riquelme");
-		formDataToSend.append("redirect", "false");
+		// Payload JSON (evita redirects y CORS al solicitar JSON)
+		const payload = {
+			access_key: "651c5462-eb71-45d1-9357-2547ec24696f",
+			name: formData.name,
+			email: formData.email,
+			subject: formData.subject,
+			message: formData.message,
+			from_name: "Portafolio Sebastián Riquelme",
+		};
 
 		try {
 			const response = await fetch("https://api.web3forms.com/submit", {
 				method: "POST",
-				body: formDataToSend,
+				headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+				},
+				body: JSON.stringify(payload),
 			});
 
-			const data = await response.json();
+			const data = await response.json().catch(() => null);
 
-			if (data.success) {
+			if (
+				response.ok &&
+				data &&
+				(data.success === true || data.status === 200)
+			) {
 				setSubmitSuccess(true);
 				setFormData({
 					name: "",
