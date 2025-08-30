@@ -134,19 +134,7 @@ export const Contact = () => {
 							</p>
 						</div>
 
-						<div>
-							<h4 className="text-base font-semibold text-gray-900 dark:text-white">
-								Teléfono
-							</h4>
-							<p className="mt-1 text-indigo-600 dark:text-indigo-400">
-								<a
-									href="tel:+56950438455"
-									className="hover:underline"
-								>
-									+56 9 5043 8455
-								</a>
-							</p>
-						</div>
+						{/* Teléfono removido por solicitud del usuario */}
 
 						<div>
 							<h4 className="text-base font-semibold text-gray-900 dark:text-white">

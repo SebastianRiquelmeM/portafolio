@@ -181,14 +181,6 @@ export const Footer = () => {
 											riquelmemunozsebastian@gmail.com
 										</a>
 									</li>
-									<li>
-										<a
-											href="tel:+56950438455"
-											className="text-base text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
-										>
-											+56 9 5043 8455
-										</a>
-									</li>
 									<li className="text-base text-gray-600 dark:text-gray-400">
 										Santiago, Chile
 									</li>
