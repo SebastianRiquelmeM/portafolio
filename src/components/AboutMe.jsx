@@ -31,15 +31,11 @@ export const AboutMe = () => {
 						viewport={{ once: true }}
 						className="md:w-1/2"
 					>
-						<div className="w-full max-w-lg mx-auto">
-							<div className="relative h-72 sm:h-80 md:h-96 rounded-2xl bg-white dark:bg-gray-800 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 overflow-hidden flex items-center justify-center p-6">
-								<img
-									src="/img/undraw_code_review_re_woeb.svg"
-									alt="Desarrollador trabajando"
-									className="max-h-full max-w-full object-contain"
-								/>
-							</div>
-						</div>
+						<img
+							src="/img/undraw_code_review_re_woeb.svg"
+							alt="Desarrollador trabajando"
+							className="w-full h-auto object-contain"
+						/>
 					</motion.div>
 
 					<motion.div
