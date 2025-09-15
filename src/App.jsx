@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import "./animations.css";
+import Seo from "./components/Seo";
 import { AboutMe } from "./components/AboutMe";
 import Hero from "./components/Hero";
 import { Projects } from "./components/Projects";
@@ -49,6 +50,7 @@ function App() {
 
 	return (
 		<div className="bg-white dark:bg-gray-900 transition-colors duration-500 overflow-x-hidden">
+			<Seo />
 			{/* Partículas de fondo animadas */}
 			<Particles
 				count={30}
